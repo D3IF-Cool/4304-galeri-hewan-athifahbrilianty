@@ -9,55 +9,47 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
         android:contentDescription="@null"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/angsa"
-        android:scaleType="fitXY"/>
+        tools:src="@drawable/angsa" />
 
     <TextView
         android:id="@+id/namaTextView"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintStart_toEndOf="@id/imageView"
         tools:text="Angsa" />
 
     <TextView
         android:id="@+id/latinTextView"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="italic"
         app:layout_constraintStart_toStartOf="@+id/namaTextView"
-        app:layout_constraintTop_toBottomOf="@+id/namaTextView"
+        app:layout_constraintTop_toBottomOf="@+id/guideline"
         tools:text="Cygnus olor" />
 
-    <TextView
-        android:id="@+id/jenisHewanTextView"
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="@+id/latinTextView"
-        app:layout_constraintTop_toBottomOf="@id/latinTextView"
-        tools:text="Unggas" />
-
-    <!--    <androidx.constraintlayout.widget.Guideline-->
-<!--        android:id="@+id/guideline"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:orientation="horizontal"-->
-<!--        app:layout_constraintGuide_percent="0.4" />-->
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="45dp" />
 
 <!--    <androidx.constraintlayout.widget.Guideline-->
 <!--        android:id="@+id/guideline2"-->
 <!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="wrap_content"-->
 <!--        android:orientation="horizontal"-->
-<!--        app:layout_constraintGuide_percent="0.6" />-->
+<!--        app:layout_constraintGuide_begin="91dp" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,7 +14,6 @@ class MainAdapter(private val data: List<Hewan>) :
             namaTextView.text = hewan.nama
             latinTextView.text = hewan.namaLatin
             imageView.setImageResource(hewan.imageResId)
-            jenisHewanTextView.text = hewan.jenisHewan
         }
     }
 
